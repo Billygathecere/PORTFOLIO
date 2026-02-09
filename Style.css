@@ -1,0 +1,225 @@
+/* Styling for body */
+body{
+    background-color: rgb(44, 42, 42);
+}
+/* Styling for Logo */
+.logo{
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    transition: 0.5s ease-in-out;
+    text-shadow: 100px;
+}
+
+
+.logo:hover{
+   font-size: 200px;
+   text-shadow: aliceblue;
+}
+
+/* Styling for Header */
+header{
+    margin: 0px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: aliceblue;
+    font-size: larger;
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-family: 'Pacifico', sans-serif;    
+}
+
+.hero{
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.head{
+ text-align: center;
+ color: rgb(158, 199, 235);
+}
+
+
+/*Styling for the navigation links*/
+nav a{
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: rgb(40, 189, 189);
+    font-family: 'Smooch Sans', sans-serif;
+    transition: 0.5s ease-in-out;
+}
+
+
+nav a:hover{
+    color: blue;
+    border: solid;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*Styling for main*/
+main{
+    margin-left: 10px;
+}
+
+/* Styling for headings */
+.title{
+    font-family: 'Ostwald', sans-serif;
+}
+
+/* Styling for paragraphs */
+.par{
+    font-family: 'Dancing Script', sans-serif;
+    color: rgb(56, 204, 11);
+}
+
+/* Styling  for the documents */
+.document{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.exp{
+    font-family: 'Caveat', sans-serif;
+    background-color: rgb(88, 88, 97) ;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgb(184, 247, 247);
+}
+
+.projects{
+    font-family: 'Caveat', sans-serif;
+    transition: ease-in-out 0.5s;
+}
+
+.list li{
+    padding: 8px;
+    width: 300px;
+    height: 50px;
+    font-weight: 700;
+    background-color: rgb(88, 88, 97);
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: ease-in-out 0.7s;
+    box-shadow: 0px 8px 8px rgb(184, 247, 247);
+}
+.list li:hover{
+    transform: translatey(-7%);
+    box-shadow:1px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.Owork{
+    font-family: 'Caveat', sans-serif;
+    background-color: rgb(88, 88, 97) ;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0px 8px 8px rgb(208, 243, 243);
+}
+
+.education{
+    font-family: 'Caveat', sans-serif;
+    background-color: rgb(21, 70, 70);
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 50px;
+}
+
+.courses li{
+    font-weight: 800;
+    background-color: blueviolet;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    transition: ease-in-out 0.8s;
+    box-shadow: 0 4px 8px rgb(184, 247, 247);
+}
+
+.courses li:hover{
+    background-color: rgb(111, 156, 66);
+    transform: translatey(-20%);
+}
+/* Styling for reviews */
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    font-family: 'Shadows Into Light', sans-serif;
+}
+
+.rtitle{
+    font-family: 'Lobster Two', sans-serif;
+    text-align: center;
+}
+
+.name{
+    color: aliceblue;
+    font-size: small;
+    font-weight: 600;
+}
+
+.comment{
+    background-color: rgb(24, 24, 87);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    transition: ease-in-out 1s;
+}
+
+.comment:hover{
+    transform: translateY(-20%);
+    box-shadow: 8px 10px 10px rgba(255, 255, 255, 1);
+    color: aliceblue;
+}
+
+/* Styling for footer */
+footer{
+    background-color: rgb(66, 64, 64);
+    margin: 0px;
+   text-align: center;
+   padding: 30px;
+}
+
+.fa-brands{
+    font-size: larger;
+    border: solid;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.fa-instagram{
+    color: deeppink;
+}
+
+.fa-facebook-f{
+    color: rgb(75, 75, 238);
+}
+
+.fa-x-twitter{
+    color: rgb(75, 75, 238);
+}
