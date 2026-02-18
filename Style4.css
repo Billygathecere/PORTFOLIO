@@ -1,0 +1,292 @@
+body{
+    background-image: linear-gradient(to top, grey, rgb(33, 32, 32));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* LOGO */
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.logo img:hover{
+    width: 200px;
+}
+
+/* NAVIGATION BAR */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;  
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: ease-in-out 0.5s;
+}
+
+.nav a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(47, 175, 18);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.nav .active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(153, 210, 20);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+/* MAIN */
+main{
+    background-color: rgb(33, 32, 32);
+    border: solid 2px black;
+    border-radius: 30px;
+    display: grid;
+    grid-template-areas:
+    "box-0 box-1 box-1"
+    "box-0 box-2 box-2"
+    "box-0 box-2 box-2";
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; */
+    margin: auto;
+    padding: 0px;
+    width: 1500px;
+
+}
+
+/* LEFT SIDE */
+.hero{
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.hero img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 20%;
+    margin: 10px;
+    padding: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.hero img:hover{
+    transform: translateY(-20%);
+    box-shadow: 8px 10px 10px rgb(106, 107, 144);
+}
+
+/* RIGHT SIDE */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header h1{
+    color: rgb(219, 250, 13);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    transition: ease-in-out 0.5s;
+}
+
+.header h1:hover{
+    transform: translateY(-20%);
+    box-shadow: 8px 10px 10px rgb(106, 107, 144);
+}
+
+.form form{
+    position: relative;
+    border: solid 2px black;
+    border-radius: 20px;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    width: 600px;
+    height: 600px;
+    transition: ease-in-out 0.5s;
+}
+
+.form form label{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    transition: ease-in-out 0.5s;
+    display: inline-block;
+    text-align: left;
+}
+
+.form form input{
+    border: solid 1px black;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    transition: ease-in-out 0.5s;
+    text-align: left;
+    width: 500px;
+    height: 50px;
+}
+
+.form form input:hover{
+    background-color: rosybrown;
+    color: white;
+}   
+
+.form form input:focus{
+    background-color: rgb(45, 12, 155);
+    color: white;
+}
+.form form input::placeholder{
+    font-family: 'Playwrite NZ';
+    color: rgb(14, 180, 53);
+    text-align: center;
+    font-size: 20px;
+}
+
+.form form textarea{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Oswald';
+    border-radius: 20px;
+    overflow: hidden;
+    border: solid 3px rgb(3, 81, 3);
+    background-color: transparent;
+    color: rgb(102, 6, 220);
+    width: 400px;
+    height: 300px;
+}
+
+.form form textarea::placeholder{
+    font-family: 'Playwrite NZ';
+    color: rgb(14, 180, 53);
+    text-align: center;
+    font-size: 20px;
+}
+
+.form form textarea:focus{
+    background-color: rgb(18, 183, 195);
+    color: white;
+}
+
+.form form button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 24, 87);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 20px;
+    transition: ease-in-out 0.5s;
+}
+
+.form form button:hover{
+    transform: translateY(-20%);
+    box-shadow: 8px 10px 10px rgb(106, 107, 144);
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(11, 11, 13, 0.934);
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+footer .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer .data a{
+    text-decoration: none;
+    color: rgb(25, 142, 142);
+    font-size: 30px;
+    font-family: 'Roboto Condensed';
+}
+
+footer .socials{
+    padding: 20px;
+    margin-right: 40px;
+    font-size: 40px;
+}
+
+footer .socials .fa-instagram{
+    color: rgb(172, 19, 103);
+    transition: ease-in-out 0.5s;
+}
+
+footer .socials .fa-facebook-f{
+    color: rgb(0, 0, 255);
+    transition: ease-in-out 0.5s;
+}
+
+footer .socials .fa-x-twitter{
+    color: rgb(0, 0, 255);
+    transition: ease-in-out 0.5s;
+}
+
+footer .socials i:hover{
+    transform: translateY(-20%);
+}
+
+footer .socials .fa-brands:hover{
+    color: rgb(196, 225, 65);
+}
+
+

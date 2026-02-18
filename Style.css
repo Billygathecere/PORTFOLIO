@@ -225,7 +225,7 @@ footer{
 }
 
 /* Mobile phone layout */
-@media screen and (max-width:600px) {
+@media screen and (max-width:1000px) {
     
 .hero {margin-top: 0px;
     display: grid;
