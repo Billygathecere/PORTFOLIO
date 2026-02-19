@@ -23,6 +23,7 @@ header{
     display: block;
     justify-content: space-between;
     align-items: center;
+    background-image: ;
 }
 
 span{
@@ -74,8 +75,21 @@ nav a:hover{
 }
 
 /*Styling for main*/
-main{
-    margin-left: 10px;
+
+
+/* Bento Grid */
+.bento{
+    display: grid;
+    grid-template-columns: 300px 300px 250px 255px 255px 255px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-template-areas: 
+    'work work edu edu edu edu'
+    'work work edu edu edu edu'
+    'work work cg cg AI AI'
+    'exp exp cg cg AI AI'
+    'exp exp web web app app'
+    'exp exp web web app app';
+    gap: 10px;
 }
 
 /* Styling for headings */
@@ -89,84 +103,167 @@ main{
     color: rgb(56, 204, 11);
 }
 
-/* Styling  for the documents */
-.document{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
-}
 
 .exp{
-    font-family: 'Caveat', sans-serif;
-    background-color: rgb(88, 88, 97) ;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
-    width: 200px;
-    box-shadow: 0px 4px 8px rgb(184, 247, 247);
-}
-
-.projects{
-    font-family: 'Caveat', sans-serif;
-    transition: ease-in-out 0.5s;
-}
-
-.list li{
-    padding: 8px;
-    width: 300px;
-    height: 50px;
-    font-weight: 700;
-    background-color: rgb(88, 88, 97);
-    border-radius: 20px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    transition: ease-in-out 0.7s;
-    box-shadow: 0px 8px 8px rgb(184, 247, 247);
-}
-.list li:hover{
-    transform: translatey(-7%);
-    box-shadow:1px 4px 4px rgba(0, 0, 0, 1);
-}
-
-.Owork{
+    font-size: 30px;
+    grid-area: exp;
     font-family: 'Caveat', sans-serif;
-    background-color: rgb(88, 88, 97) ;
+    background-image:linear-gradient(to top ,grey, black) ;
+    opacity: 70%;
+    border: solid 6px black;
     border-radius: 20px;
     padding: 20px;
-    width: 200px;
     margin: 10px;
-    box-shadow: 0px 8px 8px rgb(208, 243, 243);
+    width: 500px;
 }
 
-.education{
+.exp:hover{
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    grid-area: work;
+    font-family: 'Caveat', sans-serif;
+    background-image:linear-gradient(to top ,grey, black) ;
+    opacity: 70%;
+    border: solid 6px black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    margin: 10px;
+}
+
+.work:hover{
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.edu{
+    grid-area: edu;
     font-family: 'Caveat', sans-serif;
     background-color: rgb(21, 70, 70);
     border-radius: 20px;
-    padding: 30px;
+    padding: 18px;
     margin-right: 50px;
-}
-
-.courses li{
-    font-weight: 800;
-    background-color: blueviolet;
-    margin: 10px;
-    border-radius: 30px;
-    padding: 30px;
+    width: 980px;
+    font-size: 35px;
     text-align: center;
-    transition: ease-in-out 0.8s;
-    box-shadow: 0 4px 8px rgb(184, 247, 247);
 }
 
-.courses li:hover{
-    background-color: rgb(111, 156, 66);
-    transform: translatey(-20%);
+/* Education */
+
+/* @keyframes glow{
+    from{
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
+    to{
+        box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    }
 }
+
+.web:hover{
+    animation: glow 1s ease-in-out infinite alternate;
+} */
+
+.web{
+    grid-area: web;
+    width: 500px;
+    height: 388px;
+    background-image: url(./Images/Web\ Development.webp);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 4px grey;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.web h3{
+    text-align: end;
+    font-family: 'Oswald';
+    color: rgb(28, 9, 242);
+    font-size: 40px;
+}
+
+.AI{
+    opacity: 0.7;
+    grid-area: AI;    
+    width: 500px;
+    height: 388px;
+    background-image: url(./Images/AI\ Learning.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 4px grey;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.AI h3{
+    text-align: end;
+    font-family: 'Oswald';
+    color: rgb(28, 9, 242);
+    font-size: 40px;
+}
+
+.app{
+    opacity: 0.7;
+    grid-area: app;
+    width: 500px;
+    height: 388px;
+    background-image: url(./Images/Mobile\ App\ Development.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 4px grey;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.app h3{
+    text-align: end;
+    font-family: 'Oswald';
+    color: rgb(28, 9, 242);
+    font-size: 40px;
+}
+
+
+.cg{
+    opacity: 0.7;
+    grid-area: cg;
+    width: 500px;
+    height: 388px;
+    background-image: url(./Images/Computer\ Graphics.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 4px grey;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.cg h3{
+    text-align: end;
+    font-family: 'Oswald';
+    color: rgb(28, 9, 242);
+    font-size: 40px;
+}
+
+
 /* Styling for reviews */
 .reviews{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
     font-family: 'Shadows Into Light', sans-serif;
 }
 
@@ -179,19 +276,32 @@ main{
     color: aliceblue;
     font-size: small;
     font-weight: 600;
+    transition: ease-in-out 0.5s;
+}
+
+.name:hover{
+    color: rgb(9, 9, 9);
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .comment{
-    background-color: rgb(24, 24, 87);
+    font-size: 40px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: solid 2px rgb(255, 255, 255);
     margin: 10px;
     padding: 10px;
     border-radius: 30px;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 1s 0.7s;
+}
+
+.comment p{
+    font-size: 40px;
 }
 
 .comment:hover{
-    transform: translateY(-20%);
-    box-shadow: 8px 10px 10px rgba(255, 255, 255, 1);
+    transform: translateY(-7%);
+    box-shadow: 8px 10px 10px  rgba(255, 255, 255, 1);
     color: aliceblue;
 }
 
@@ -242,48 +352,41 @@ footer{
     margin: auto;
 }
 
-.document{
+.bento{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(15, 200px);
     text-align: left;
+    grid-template-areas: 
+    'work'
+    'work'
+    'exp'
+    'exp'
+    'exp'
+    'exp'
+    'edu'
+    'edu'
+    'edu'
+    'cg'
+    'cg'
+    'AI'
+    'AI'
+    'web'
+    'web'
+    'app'
+    'app';
+    gap: 10px;
 }
 
 .work{ 
     padding: 0px;
-    margin-top: -300px;
-    margin-left: 70px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
 }
-.Owork{
-    height: 500px;
-    width: 400px;
-    padding: 80px;
-    font-size: 50px;
-}
+
 
 .exp{
-    height: 800px;
-    width: 400px;
-    padding: 80px;
-    font-size: 50px;
+    width: auto;
 }
 
-.list{
-    padding: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.list li{
-    width: 250px;
-    height: 300px;
-    font-size: 45px;
-    padding: 25px;
-}
 
 h2{
     font-size: 50px;
@@ -321,30 +424,24 @@ span{
 p{
     font-size: 30px;
 }
-
-.courses{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.edu{
+    width: auto;
 }
 
-.courses li{
-    height: 100px;
-    padding: 60px;
-    font-size: 40px;
+.web{
+    width: auto;
 }
-
-.education{
-    height: 990px;
-    width: 627px;
-    margin-top: -300px;
+.app{
+    width: auto;
 }
-
-.rtitle{
-    margin-top: -920px;
+.AI{
+    width: auto;
+}
+.cg{
+    width: auto;
 }
 .reviews{
-    margin-top: -790px;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
