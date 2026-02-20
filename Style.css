@@ -74,7 +74,45 @@ nav a:hover{
     padding-top: 10px;
 }
 
-/*Styling for main*/
+/* Tooltip for contacts page */
+.tooltip{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltiptext{
+    width: 130px;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: solid 3px rgb(255, 255, 255);
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    top: 125%;
+    left: 65%;
+    margin-left: -65px /*Half of its width to center the tooltip*/
+}
+
+.tooltiptext::after{
+    content: "";
+    position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent #fbfbfb;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /* Bento Grid */
@@ -340,10 +378,57 @@ nav a:hover{
 
 /* Styling for footer */
 footer{
-    background-color: rgb(66, 64, 64);
+    background-color: transparent;
+    border: 4px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     margin: 0px;
    text-align: center;
    padding: 30px;
+   color: white;
+   font-size: 30px;
+}
+
+/* Email tooltip */
+.emailtp{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.emailtpt{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: solid 3px rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    /* margin-left: -65px Half of its width to center the tooltip */
+}
+
+.emailtpt::after{
+    content: "";
+    position: absolute;
+    right: 101%;
+    top: 51%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid; 
+    border-color:  transparent rgb(255, 255, 255) transparent transparent;
+}
+
+.emailtpt{
+    top: -90%;
+    left: 105%;
+}
+
+.emailtp:hover .emailtpt{
+    visibility: visible;
+    opacity: 1;
 }
 
 .fa-brands{
