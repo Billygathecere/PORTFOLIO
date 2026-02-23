@@ -211,6 +211,7 @@ main{
 }
 
 .form form button{
+    cursor: pointer;
     color: rgb(255, 255, 255);
     background-color: rgb(24, 24, 87);
     text-align: center;
