@@ -105,6 +105,7 @@ h1{
 
 /* Project 2 */
 .project2{
+    font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -131,6 +132,7 @@ h1{
 
 /* Project 3 */
 .project3{
+    font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -160,6 +162,7 @@ h1{
 
 /* Project 4 */
 .project4{
+    font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
