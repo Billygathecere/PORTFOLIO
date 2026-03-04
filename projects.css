@@ -231,12 +231,32 @@ h1{
 
 /* FOOTER */
 footer{
-    background-color: rgb(79, 83, 83);
+    background-color: rgb(158, 166, 166, 0.5);
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 10px;
     padding: 20px;
     color: rgb(255, 255, 255);
-    font-size: 1.5em;
+}
+
+.fa-brands{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.fa-brands:hover{
+    color: rgb(0, 0, 0);
+}
+
+.fa-facebook-f{
+    color: rgb(24, 36, 210);
+}
+
+.fa-x-twitter{
+    color: rgb(4, 174, 222);
+}
+
+.fa-instagram{
+    color: rgb(255, 0, 132);
 }
