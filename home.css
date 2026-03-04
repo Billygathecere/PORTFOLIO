@@ -1,28 +1,25 @@
 body{
-    font-weight: 800;
-    background-image: linear-gradient(to top, rgb(91, 87, 87), rgb(25, 20, 20));
-    background-size: cover;
+    margin: 0;
+    background-image: url(./Images/background\ image.webp);
+    background-size: 100% auto;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* HEADER */
 nav {
-    width: 800px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; 
-    border: solid 0.5vh black;
-    border-radius: 2vh;
+    padding: 10px;
 }
 
 nav a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     color: white;
-    font-size: 2em;
     margin: 10px;
     padding: 10px;
 }
@@ -67,31 +64,42 @@ nav a{
 
 
 /* MAIN */
-/* LEFT SIDE */
-main{
-    background-color: transparent;
-    border-radius: 20px;
-    border: 5px solid black;
+
+/* CARD */
+
+.card{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
     box-sizing: border-box;
+    background-color: rgb(154, 148, 148, 0.4);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: space-between;
     align-items: center;
-    margin: 0px;
-    padding:  0px;
-    width: 1200px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
+    width: 1500px;
+    height: 900px;
 }
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+/* LEFT SIDE */
+
 .photo img{
-    border-radius: 50%;
-    max-width: 50%;
-    width: 80px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 500px;
     margin-top: 20px;
     overflow: hidden;
 }
+
 .content{
     display: flex;
     flex-direction: row;
@@ -100,6 +108,8 @@ main{
     margin: 10px;
     padding: 10px;
 }
+
+
 .content img{
     width: 450px;
 }
@@ -155,13 +165,12 @@ main{
 
 /* FOOTER */
 footer{
-    background-color: cadetblue;
+    background-color: grey;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
-    font-size: 2em;
+    padding: 30px;
 }
 
 footer a{
