@@ -137,7 +137,7 @@ main{
 
 .text{
     text-align: center;
-    margin-top: -200px;
+
     width: 500px;
 }
 
@@ -159,11 +159,64 @@ main{
     color: rgb(8, 8, 8);
 }
 
+/* SKILLS */
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+    color: rgb(8, 8, 8);
+}
+
+.skills{
+    background-image: radial-gradient(circle, white, rgb(119, 232, 252,0.5), rgb(21, 71, 196,0.5));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 550px;
+}
+
+.skills p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(8, 8, 8);
+}
+
+.skills i{
+    font-size: 50px;
+    transition: ease-in-out 0.3s;
+    animation: buttons 5s infinite;
+}
+
+.fa-html5{
+    color: rgb(255, 55, 0);
+}
+
+.fa-css3-alt{
+    color: rgb(0, 0, 255);
+}
+
+.fa-square-js{
+    color: rgb(255, 255, 0);
+}
+
+.fa-react{
+    color: rgb(16, 16, 241);
+}
+
+
 /* BUTTONS */
 .buttons{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 10px;
     padding: 10px;
@@ -179,7 +232,6 @@ main{
     font-size: 1em;
     border-radius: 10px;
     transition: ease-in-out 0.5s;
-    animation: buttons 5s infinite;
 }
 
 @keyframes buttons{
@@ -187,10 +239,7 @@ main{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-20%);
-        background-color: seagreen;
-        box-shadow: 4px 4px 4px rgb(0, 0, 0);
-        transform: scale(1.2);
+        transform: translateY(-30%);
     }
     100%{
         transform: translateY(0);
@@ -199,7 +248,7 @@ main{
 
 .button:hover{
     transform: translateY(-20%);
-    animation-play-state: paused;
+    background-color: skyblue;
 }
 
 /* FOOTER */
@@ -209,7 +258,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 footer a{
