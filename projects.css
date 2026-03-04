@@ -61,29 +61,66 @@ nav a:hover{
 }
 
 /* Heading */
-.pro{
-    margin-right: auto;
-    margin-left: auto;
+.title{
+    margin-left: 800px;
 }
 
 h1{
     font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }
 /* PROJECT */
 /* Project 1 */
 .project1{
+    background-image: radial-gradient(circle, rgb(192, 188, 188,0.5), rgb(44, 157, 201,0.5), rgb(77, 77, 208,0.5));
     font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin-right: 120px;
+    margin: auto;
+    width: 1200px;
     padding: 10px;
     text-align: center;
+    border-radius: 20px;
 }
 .project1 h2{
     font-size: 50px;
     color: rgb(255, 255, 255);
 }
+
+/* Extraa info */
+.extra-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.design{
+    background-color: rgb(173, 164, 164, 0.5);
+    border-radius: 20px;
+    width: 100px;
+    border: black solid 1px;
+    text-align: center;
+}
+
+.branding{
+    background-color: rgb(173, 164, 164, 0.5);
+    border-radius: 20px;
+    width: 100px;
+    border: black solid 1px;
+    text-align: center;
+}
+
+.identity{
+    border: solid 1px black;
+    background-color: rgb(173, 164, 164, 0.5);
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}
+
 
 
 .project1 p{
@@ -94,28 +131,26 @@ h1{
 .bento img{
     width: 600px;
     height: auto;
-    transition: ease-in-out 0.5s;
+    border-radius: 20px;
 }
 
-.bento img:hover{
-    transform: translateY(-20%);
-    width: 650px;
-    height: auto;
-}
 
 /* Project 2 */
 .project2{
+    background-image: radial-gradient(circle, rgb(192, 188, 188,0.5), rgb(44, 157, 201,0.5), rgb(77, 77, 208,0.5));
+    width: 1200px;
+    border-radius: 20px;
     font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 10px;
+    margin: 10px 280px;
     padding: 10px;
 }
 .website img{
     width: 600px;
     height: auto;
-    transition: ease-in-out 0.5s;
+    border-radius: 20px;
 }
 .project2 h2{
     font-size: 50px;
@@ -132,18 +167,21 @@ h1{
 
 /* Project 3 */
 .project3{
+    margin: 10px 280px;
+    background-image: radial-gradient(circle, rgb(192, 188, 188,0.5), rgb(44, 157, 201,0.5), rgb(77, 77, 208,0.5));
+    width: 1200px;
+    border-radius: 20px;
     font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 10px;
     padding: 10px;
 }
 
 .clipboard img{
     width: 600px;
     height: auto;
-    transition: ease-in-out 0.5s;
+    border-radius: 20px;
 }
 
 .project3 h2{
@@ -162,17 +200,20 @@ h1{
 
 /* Project 4 */
 .project4{
+    margin: 10px 280px;
+    background-image: radial-gradient(circle, rgb(192, 188, 188,0.5), rgb(44, 157, 201,0.5), rgb(77, 77, 208,0.5));
+    width: 1200px;
+    border-radius: 20px;
     font-family: 'Saira Condensed';
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 10px;
     padding: 10px;
 }
 .huddle img{
     width: 600px;
     height: auto;
-    transition: ease-in-out 0.5s;
+    border-radius: 20px;
 }
 
 .explain4{
